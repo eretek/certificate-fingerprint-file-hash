@@ -1,0 +1,37 @@
+{
+ "tests": [
+  {
+   "in": {
+    "pem": "-----BEGIN CERTIFICATE-----\nMIIBlDCCATmgAwIBAgIFBKGyw9QwCgYIKoZIzj0EAwIwODELMAkGA1UEBhMCVFIx\nETAPBgNVBAoMCE9ybmVrIEFTMRYwFAYDVQQDDA1Pcm5layBUZXN0IENBMB4XDTI2\nMDYwMTAwMDAwMFoXDTI3MDYzMDAwMDAwMFowGjEYMBYGA1UEAwwPd3d3LmV4YW1w\nbGUuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEK8NCS68dnBxUmm8rk+QL\n81DwaczjsIxsPsfO+u7XorRbKjJ7qAm0iIBXTikCAFdaYj0JdAC8SJNAmCAjSAD7\nk6NOMEwwJwYDVR0RBCAwHoIPd3d3LmV4YW1wbGUuY29tggtleGFtcGxlLmNvbTAT\nBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMAoGCCqGSM49BAMCA0kA\nMEYCIQDCAHg9Y9nmD3zptt+TJboNIB17g7cO8IZJTOj397R1vgIhALeKsNm+q81S\nhBblTgfJX/4IJ6UHpny34TjvoM789eA3\n-----END CERTIFICATE-----\n"
+   },
+   "v": {
+    "sha256": "0e8a3d4dabe1fe93ba7d1e221853a79133cd917496564bf3f1aa9440b491a129",
+    "sha1": "7be389356de0d775e98c32bcdf39230427ccc5d9",
+    "pin": "1tst1ZFJKlNtPsIxQQp9GKvtb4IUgGLV2DcvDsJcDaY="
+   }
+  },
+  {
+   "in": {
+    "txt": "abc",
+    "expect": "BA:78:16:BF:8F:01:CF:EA:41:41:40:DE:5D:AE:22:23:B0:03:61:A3:96:17:7A:9C:B4:10:FF:61:F2:00:15:AD"
+   },
+   "v": {
+    "sha256": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+    "match": true
+   }
+  },
+  {
+   "in": {
+    "txt": "abc",
+    "expect": "0000"
+   },
+   "v": {
+    "match": false
+   }
+  },
+  {
+   "in": {},
+   "err": "file"
+  }
+ ]
+}
